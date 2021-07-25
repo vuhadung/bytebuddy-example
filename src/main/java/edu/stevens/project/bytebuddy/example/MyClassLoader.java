@@ -1,7 +1,5 @@
 package edu.stevens.project.bytebuddy.example;
 
-import static org.junit.Assert.assertNotEquals;
-
 public class MyClassLoader extends ClassLoader {
 
 	public MyClassLoader(ClassLoader parent) {
@@ -16,6 +14,6 @@ public class MyClassLoader extends ClassLoader {
 //		AppClassLoader found Bar in the classpath and load it
 //		MyClassLoader will only load Bar if its parent can not found Bar
 		System.out.println("Classloader of Bar is: " + bar.getClassLoader());
-		assertNotEquals(bar.getClassLoader(), classLoader);
+//		assertNotEquals(bar.getClassLoader(), classLoader);
 	}
 }
